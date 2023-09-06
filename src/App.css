@@ -28,6 +28,46 @@
   color: #61dafb;
 }
 
+.active {
+  font-weight: bold;
+  color: red;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+}
+
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+nav li a {
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav li a:hover {
+  color: blue;
+  transform: scale(1.05);
+}
+
+nav li a:active {
+  color: darkblue;
+  transform: scale(0.95);
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
